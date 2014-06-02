@@ -40,6 +40,7 @@
 	[self addContentsView:pickerView];
 
 	UIButton * okButton = [UIButton buttonWithType:UIButtonTypeSystem];
+	okButton.titleLabel.font = [UIFont systemFontOfSize:25.0f];
 	[okButton setTitle:@"OK" forState:UIControlStateNormal];
 	[okButton addTarget:self action:@selector(dismiss) forControlEvents:UIControlEventTouchUpInside];
 	[self addContentsView:okButton];
